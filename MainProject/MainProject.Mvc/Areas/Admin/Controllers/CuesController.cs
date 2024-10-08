@@ -2,6 +2,7 @@
 using MainProject.Application.Services.Cues.Commands.AddCue;
 using MainProject.Application.Services.Cues.Commands.EditCue;
 using MainProject.Application.Services.Customers.Queries.GetCustomersForAdmin;
+using MainProject.Application.ViewModels.Cue;
 using MainProject.Mvc.Areas.Admin.Models.ViewModels.Cue;
 using MainProject.Mvc.Areas.Admin.Models.ViewModels.Customer;
 using Microsoft.AspNetCore.Mvc;
@@ -33,10 +34,10 @@ namespace MainProject.Mvc.Areas.Admin.Controllers
 
             ViewBag.Customers = new SelectList(_customerFacad.GetCustomersForAdminService.Execute(Page).Customers, "CustomerId", "UserName");
 
+            CueViewModel model = _cueFacad.GetCuesForAdminService.GetCues();
 
 
-
-            return View();
+            return View(model);
         }
 
         [HttpGet]

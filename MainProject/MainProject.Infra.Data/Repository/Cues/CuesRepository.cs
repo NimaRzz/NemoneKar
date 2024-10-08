@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MainProject.Application.Interfaces.Contexts;
+using MainProject.Application.ViewModels.Cue;
 using MainProject.Domain.Interfaces.Cues;
 using MainProject.Domain.Model.Cues;
 
 namespace MainProject.Infra.Data.Repository.Cues
 {
-    public class CuesRepository:ICuesRepository
+    public class CuesRepository : ICuesRepository
     {
         private readonly IDataBaseContext _context;
 
@@ -20,7 +21,7 @@ namespace MainProject.Infra.Data.Repository.Cues
 
         public IEnumerable<Cue> GetCues()
         {
-            return _context.Cues;
+            return _context.Cues.ToList();
         }
     }
 }

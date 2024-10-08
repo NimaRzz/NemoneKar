@@ -3,12 +3,36 @@
   "WorkspaceRootPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\services\\cues\\facadpattern\\cuefacad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\services\\cues\\facadpattern\\cuefacad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\services\\cues\\queries\\getcuesforadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\services\\cues\\queries\\getcuesforadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\interfaces\\facadpatterns\\icuefacad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\interfaces\\facadpatterns\\icuefacad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\interfaces\\cues\\igetcuesforadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\interfaces\\cues\\igetcuesforadminservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.infra.data\\repository\\cues\\cuesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|solutionrelative:mainproject.infra.data\\repository\\cues\\cuesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.domain\\interfaces\\cues\\icuesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|solutionrelative:mainproject.domain\\interfaces\\cues\\icuesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AA30921D-E9B4-4AB0-95E5-0080CFFCE6F0}|MainProject.Infra.IoC\\MainProject.Infra.IoC.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.infra.ioc\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AA30921D-E9B4-4AB0-95E5-0080CFFCE6F0}|MainProject.Infra.IoC\\MainProject.Infra.IoC.csproj|solutionrelative:mainproject.infra.ioc\\dependencycontainer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\viewmodels\\cue\\cueviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\viewmodels\\cue\\cueviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\interfaces\\facadpatterns\\icustomerfacad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\interfaces\\facadpatterns\\icustomerfacad.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\controllers\\cuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\controllers\\cuescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +51,105 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "CueFacad.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Cues\\FacadPattern\\CueFacad.cs",
-              "RelativeDocumentMoniker": "MainProject.Application\\Services\\Cues\\FacadPattern\\CueFacad.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Cues\\FacadPattern\\CueFacad.cs",
-              "RelativeToolTip": "MainProject.Application\\Services\\Cues\\FacadPattern\\CueFacad.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAACEAAAAJAAAAAAAAAA==",
+              "Title": "GetCuesForAdminService.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Cues\\Queries\\GetCuesForAdminService.cs",
+              "RelativeDocumentMoniker": "MainProject.Application\\Services\\Cues\\Queries\\GetCuesForAdminService.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Cues\\Queries\\GetCuesForAdminService.cs",
+              "RelativeToolTip": "MainProject.Application\\Services\\Cues\\Queries\\GetCuesForAdminService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T09:58:59.928Z",
+              "WhenOpened": "2024-10-08T15:06:10.327Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ICuesRepository.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Interfaces\\Cues\\ICuesRepository.cs",
+              "RelativeDocumentMoniker": "MainProject.Domain\\Interfaces\\Cues\\ICuesRepository.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Interfaces\\Cues\\ICuesRepository.cs",
+              "RelativeToolTip": "MainProject.Domain\\Interfaces\\Cues\\ICuesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T15:05:09.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CuesRepository.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Repository\\Cues\\CuesRepository.cs",
+              "RelativeDocumentMoniker": "MainProject.Infra.Data\\Repository\\Cues\\CuesRepository.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Repository\\Cues\\CuesRepository.cs",
+              "RelativeToolTip": "MainProject.Infra.Data\\Repository\\Cues\\CuesRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:49:35.286Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ICueFacad.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\FacadPatterns\\ICueFacad.cs",
-              "RelativeDocumentMoniker": "MainProject.Application\\Interfaces\\FacadPatterns\\ICueFacad.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\FacadPatterns\\ICueFacad.cs*",
-              "RelativeToolTip": "MainProject.Application\\Interfaces\\FacadPatterns\\ICueFacad.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Title": "IGetCuesForAdminService.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\Cues\\IGetCuesForAdminService.cs",
+              "RelativeDocumentMoniker": "MainProject.Application\\Interfaces\\Cues\\IGetCuesForAdminService.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\Cues\\IGetCuesForAdminService.cs*",
+              "RelativeToolTip": "MainProject.Application\\Interfaces\\Cues\\IGetCuesForAdminService.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T09:57:50.736Z",
+              "WhenOpened": "2024-10-08T14:47:49.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CueViewModel.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\ViewModels\\Cue\\CueViewModel.cs",
+              "RelativeDocumentMoniker": "MainProject.Application\\ViewModels\\Cue\\CueViewModel.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\ViewModels\\Cue\\CueViewModel.cs*",
+              "RelativeToolTip": "MainProject.Application\\ViewModels\\Cue\\CueViewModel.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:46:28.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DependencyContainer.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.IoC\\DependencyContainer.cs",
+              "RelativeDocumentMoniker": "MainProject.Infra.IoC\\DependencyContainer.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.IoC\\DependencyContainer.cs",
+              "RelativeToolTip": "MainProject.Infra.IoC\\DependencyContainer.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:44:43.659Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ICustomerFacad.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\FacadPatterns\\ICustomerFacad.cs",
+              "RelativeDocumentMoniker": "MainProject.Application\\Interfaces\\FacadPatterns\\ICustomerFacad.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\FacadPatterns\\ICustomerFacad.cs",
+              "RelativeToolTip": "MainProject.Application\\Interfaces\\FacadPatterns\\ICustomerFacad.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:40:13.359Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CuesController.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\CuesController.cs",
+              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Controllers\\CuesController.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\CuesController.cs",
+              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Controllers\\CuesController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACQAAABMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T14:39:54.082Z",
               "EditorCaption": ""
             }
           ]

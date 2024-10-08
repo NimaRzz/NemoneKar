@@ -22,10 +22,9 @@ namespace MainProject.Application.Services.Cues.FacadPattern
 
         private readonly ICuesRepository _cuesRepository;
 
-        public CueFacad(IDataBaseContext context, ICuesRepository cuesRepository)
+        public CueFacad(IDataBaseContext context)
         {
             _context = context;
-            _cuesRepository = cuesRepository;
         }
 
         private IGetCuesForAdminService _getCuesForAdminService;

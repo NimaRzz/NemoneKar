@@ -23,43 +23,45 @@
                                     <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 184.2px;" aria-sort="ascending">Id</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 279.2px;">نام کاربری</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 135.2px;">پست الکترونیک</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 63.2px;">فعال</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 124.2px;">ادمین</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 97px;">سطح دسترسی</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 97px;">تغییرات</th></tr>
                                 </thead>
 
-
-                                <tbody>
-                                @foreach (var item in Model.Cues)
+                                @if (Model.Cues != null && Model.Cues.Any())
                                 {
-                                    <tr role="row" class="odd">
-                                        <td>@item.UserId</td>
+                                    <tbody>
+                                    @foreach (var item in Model.Cues)
+                                    {
+                                        <tr role="row" class="odd">
+                                            <td>@item.UserId</td>
 
-                                        <td>
-                                            @{
+                                            <td>
+                                                @{
                                                     var username = item.Customer.UserName.Length > 30 ? item.Customer.UserName.Substring(0, 30) + "..." : item.Customer.UserName;
-                                            }
-                                            @username
-                                        </td>
+                                                }
+                                                @username
+                                            </td>
 
-                                        <td>
-                                            @{
-                                                var email = item.Description.Length > 20 ? item.Description.Substring(0, 20) + "..." : item.Description;
-                                            }
-                                            @email
-                                        </td>
+                                            <td>
+                                                @{
+                                                    var email = item.Description.Length > 20 ? item.Description.Substring(0, 20) + "..." : item.Description;
+                                                }
+                                                @email
+                                            </td>
 
-                                        <td>
-                                            @item.ShowDate
-                                        </td>
-                                        <td>
-                                            <button class="btn btn-primary" onclick="ShowModalEditUser()">ویرایش سرنخ</button>
+                                            <td>
+                                                @item.ShowDate
+                                            </td>
+                                            <td>
+                                                <button class="btn btn-primary" onclick="ShowModalEditUser()">ویرایش سرنخ</button>
                                                 <button class="btn btn-danger" onclick="DeleteUser('@item.UserId')">حذف سرنخ</button>
 
 
-                                        </td>
+                                            </td>
 
 
-                                    </tr>
+                                        </tr>
 
+                                    }
+
+                                    </tbody>
                                 }
-                                   
-                                </tbody>
                             </table>
                         </div>
                     </div><div class="row"><div class="col-sm-12 col-md-5"></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate"></div></div></div>

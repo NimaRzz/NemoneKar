@@ -9,6 +9,5 @@ namespace MainProject.Application.ViewModels.Cue
     public class CueViewModel
     {
         public IEnumerable<Domain.Model.Cues.Cue> Cues { get; set; }
-
     }
 }

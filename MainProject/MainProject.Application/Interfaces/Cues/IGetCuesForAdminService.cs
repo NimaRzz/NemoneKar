@@ -9,6 +9,6 @@ namespace MainProject.Application.Interfaces.Cues
 {
     public interface IGetCuesForAdminService
     {
-        CueViewModel GetCuesl();
+        CueViewModel GetCues();
     }
 }

@@ -20,7 +20,7 @@ namespace MainProject.Application.Services.Cues.Queries
             _cuesRepository = cuesRepository;
         }
 
-        public CueViewModel GetCuesl()
+        public CueViewModel GetCues()
         {
             return new CueViewModel
             {
