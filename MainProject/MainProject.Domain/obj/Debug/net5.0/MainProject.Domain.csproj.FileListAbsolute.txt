@@ -21,3 +21,15 @@ C:\Users\Asus\source\repos\NimaRzz\Repository-Main\MainProject\MainProject.Domai
 C:\Users\Asus\source\repos\NimaRzz\Repository-Main\MainProject\MainProject.Domain\obj\Debug\net5.0\refint\MainProject.Domain.dll
 C:\Users\Asus\source\repos\NimaRzz\Repository-Main\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.pdb
 C:\Users\Asus\Source\Repos\NimaRzz\Repository-Main\MainProject\MainProject.Domain\obj\Debug\net5.0\ref\MainProject.Domain.dll
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\bin\Debug\net5.0\MainProject.Domain.deps.json
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\bin\Debug\net5.0\MainProject.Domain.dll
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\bin\Debug\net5.0\MainProject.Domain.pdb
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.GeneratedMSBuildEditorConfig.editorconfig
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.AssemblyInfoInputs.cache
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.AssemblyInfo.cs
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.csproj.CoreCompileInputs.cache
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.sourcelink.json
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.dll
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\refint\MainProject.Domain.dll
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\MainProject.Domain.pdb
+G:\NemoneKar\NemoneKar\MainProject\MainProject.Domain\obj\Debug\net5.0\ref\MainProject.Domain.dll

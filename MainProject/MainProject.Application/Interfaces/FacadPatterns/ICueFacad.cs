@@ -9,9 +9,9 @@ namespace MainProject.Application.Interfaces.FacadPatterns
 {
     public interface ICueFacad
     {
-        //IGetCuesForAdminService GetCuesForAdminService { get; }
+        IGetCuesForAdminService GetCuesForAdminService { get; }
 
-       
+
         IAddCueService AddCueService { get; }
 
       

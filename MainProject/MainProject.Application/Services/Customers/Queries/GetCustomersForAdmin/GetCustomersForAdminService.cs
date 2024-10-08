@@ -32,7 +32,7 @@ namespace MainProject.Application.Services.Customers.Queries.GetCustomersForAdmi
             int rowsCount = 0;
             var customersList = customers.Include(p => p.User).Include(p => p.City).Include(p => p.Province).ToPaged(Page, 20, out rowsCount).Select(p => new GetCustomersDto()
             {
-                CustomerId = p.Id,
+                CustomerId = p.UserId,
                 Phone = p.Phone,
                 UserName = p.User.UserName,
                 Address = p.Address,

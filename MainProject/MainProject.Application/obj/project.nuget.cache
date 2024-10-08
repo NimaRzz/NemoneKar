@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "hV6Q1pqYr7E=",
+  "dgSpecHash": "sn371OQrys0=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Application\\MainProject.Application.csproj",
+  "projectFilePath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\MainProject.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\md.persiandatetime\\4.5.0\\md.persiandatetime.4.5.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.0\\microsoft.aspnetcore.cryptography.internal.5.0.0.nupkg.sha512",

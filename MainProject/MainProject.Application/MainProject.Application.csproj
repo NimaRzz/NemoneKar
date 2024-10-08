@@ -14,8 +14,4 @@
     <ProjectReference Include="..\MainProject.Domain\MainProject.Domain.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Services\Cues\Queries\" />
-  </ItemGroup>
-
 </Project>

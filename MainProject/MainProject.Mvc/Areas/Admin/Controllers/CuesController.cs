@@ -26,7 +26,7 @@ namespace MainProject.Mvc.Areas.Admin.Controllers
         }
 
         [HttpGet]
-        public IActionResult Index(int Page)
+        public IActionResult Index(int Page=1)
         {
             //var cuesList = _cueFacad.GetCuesForAdminService.Execute(Page);
 

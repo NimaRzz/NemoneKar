@@ -35,10 +35,11 @@ namespace MainProject.Mvc.Areas.Admin.Controllers
 
 
         [HttpGet]
-        public IActionResult Add(Ordering ordering, string SearchKey, int Page, int pageSize)
+        public IActionResult Add(Ordering ordering, string SearchKey, int Page = 1, int pageSize = 20)
         {
             ViewBag.Users = new SelectList(_userFacad.GetUsersForAdminService.Execute(ordering, SearchKey, Page, pageSize).Users,
                 "UserId", "UserName");
+
             return View();
         }
 

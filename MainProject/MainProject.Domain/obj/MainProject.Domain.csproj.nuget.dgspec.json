@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj": {}
+    "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj": {
+    "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj",
+        "projectUniqueName": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj",
         "projectName": "MainProject.Domain",
-        "projectPath": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj",
+        "projectPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\MainProject.Domain.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\source\\repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Domain\\obj\\",
+        "outputPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

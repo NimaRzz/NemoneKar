@@ -9,7 +9,8 @@ using MainProject.Application.Interfaces.FacadPatterns;
 using MainProject.Application.Services.Cues.Commands.AddCue;
 using MainProject.Application.Services.Cues.Commands.DeleteCue;
 using MainProject.Application.Services.Cues.Commands.EditCue;
-
+using MainProject.Application.Services.Cues.Queries;
+using MainProject.Domain.Interfaces.Cues;
 
 
 namespace MainProject.Application.Services.Cues.FacadPattern
@@ -19,20 +20,23 @@ namespace MainProject.Application.Services.Cues.FacadPattern
 
         private readonly IDataBaseContext _context;
 
-        public CueFacad(IDataBaseContext context)
+        private readonly ICuesRepository _cuesRepository;
+
+        public CueFacad(IDataBaseContext context, ICuesRepository cuesRepository)
         {
             _context = context;
+            _cuesRepository = cuesRepository;
         }
 
-        //private IGetCuesForAdminService _getCuesForAdminService;
+        private IGetCuesForAdminService _getCuesForAdminService;
 
-        //public IGetCuesForAdminService GetCuesForAdminService
-        //{
-        //    get
-        //    {
-        //        return _getCuesForAdminService = _getCuesForAdminService ?? new GetCuesForAdminService(_context);
-        //    }
-        //}
+        public IGetCuesForAdminService GetCuesForAdminService
+        {
+            get
+            {
+                return _getCuesForAdminService = _getCuesForAdminService ?? new GetCuesForAdminService(_cuesRepository);
+            }
+        }
 
         private IAddCueService _addCueService;
 

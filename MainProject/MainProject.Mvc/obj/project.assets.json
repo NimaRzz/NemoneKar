@@ -7757,11 +7757,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Mvc\\MainProject.Mvc.csproj",
+      "projectUniqueName": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\MainProject.Mvc.csproj",
       "projectName": "MainProject.Mvc",
-      "projectPath": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Mvc\\MainProject.Mvc.csproj",
+      "projectPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\MainProject.Mvc.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Mvc\\obj\\",
+      "outputPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7782,14 +7782,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Application\\MainProject.Application.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Application\\MainProject.Application.csproj"
+            "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\MainProject.Application.csproj": {
+              "projectPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\MainProject.Application.csproj"
             },
-            "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Infra.Data\\MainProject.Infra.Data.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Infra.Data\\MainProject.Infra.Data.csproj"
+            "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\MainProject.Infra.Data.csproj": {
+              "projectPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\MainProject.Infra.Data.csproj"
             },
-            "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Infra.IoC\\MainProject.Infra.IoC.csproj": {
-              "projectPath": "C:\\Users\\Asus\\Source\\Repos\\NimaRzz\\Repository-Main\\MainProject\\MainProject.Infra.IoC\\MainProject.Infra.IoC.csproj"
+            "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.IoC\\MainProject.Infra.IoC.csproj": {
+              "projectPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.IoC\\MainProject.Infra.IoC.csproj"
             }
           }
         }
