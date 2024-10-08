@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using MainProject.Application.Interfaces.Contexts;
 using MainProject.Application.Interfaces.Customers;
 using MainProject.Common.Dto;
-using MainProject.Domain.Model.Cues;
 using MD.PersianDateTime;
 
 namespace MainProject.Application.Services.Customers.Commands.DeleteCustomer

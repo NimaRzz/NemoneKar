@@ -10,6 +10,7 @@ using MainProject.Application.Services.Users.Commands.Register;
 using MainProject.Application.Services.Users.Queries.GetUsersForAdmin;
 using MainProject.Mvc.Areas.Admin.Models.ViewModels.Customer;
 using MainProject.Mvc.Areas.Admin.Models.ViewModels.User;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -20,6 +21,7 @@ using Newtonsoft.Json;
 namespace PishroProject.Mvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize("Admin")]
     public class UsersController : Controller
     {
         private readonly IUserFacad _userFacad;

@@ -37,6 +37,10 @@ namespace MainProject.Mvc
                 options.AddPolicy(UserRoles.Admin, policy => policy.RequireRole(UserRoles.Admin));
                 options.AddPolicy(UserRoles.Customer, policy => policy.RequireRole(UserRoles.Customer));
                 options.AddPolicy(UserRoles.Operator, policy => policy.RequireRole(UserRoles.Operator));
+                options.AddPolicy(UserRoles.AdminOrOperator, policy =>
+                    policy.RequireAssertion(context => 
+                        context.User.IsInRole("Operator") || context.User.IsInRole("Admin")
+                        ));
 
             });
 

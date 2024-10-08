@@ -1,20 +1,20 @@
 ﻿using System;
 using MainProject.Application.Interfaces.FacadPatterns;
 using MainProject.Application.Interfaces.Users;
-using MainProject.Application.Services.Cues.Commands.AddCue;
-using MainProject.Application.Services.Cues.FacadPattern;
 using MainProject.Application.Services.Customers.Commands.AddCustomer;
 using MainProject.Application.Services.Customers.Commands.DeleteCustomer;
 using MainProject.Application.Services.Customers.Commands.EditCustomer;
 using MainProject.Application.Services.Customers.Queries.GetCustomersForAdmin;
 using MainProject.Mvc.Areas.Admin.Models.ViewModels.Cue;
 using MainProject.Mvc.Areas.Admin.Models.ViewModels.Customer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace MainProject.Mvc.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize("AdminOrOperator")]
     public class CustomersController : Controller
     {
         private readonly ICustomerFacad _customerFacad;

@@ -9,7 +9,6 @@ using MainProject.Application.Interfaces.Users;
 using MainProject.Common.Dto;
 using MainProject.Domain.Model.Users;
 using MD.PersianDateTime;
-using MainProject.Domain.Model.Cues;
 using MainProject.Application.Services.Users.Commands.Register;
 using System.Text.RegularExpressions;
 

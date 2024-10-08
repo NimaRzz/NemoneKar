@@ -13,6 +13,8 @@ namespace MainProject.Common.Roles
         public const string Customer = "Customer";
         
         public const string Operator = "Operator";
+       
+        public const string AdminOrOperator = "AdminOrOperator";
 
     }
 }

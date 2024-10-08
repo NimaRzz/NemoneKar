@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using MainProject.Application.Interfaces.Contexts;
 using MainProject.Common.Roles;
-using MainProject.Domain.Model.Cues;
 using MainProject.Domain.Model.Customers;
 using Microsoft.EntityFrameworkCore;
 using MainProject.Domain.Model.Users;
@@ -29,7 +28,6 @@ namespace MainProject.Infra.Data.Contexts
         
         public DbSet<UserInRole> UserInRoles { get; set; }
         
-        public DbSet<Cue> Cues { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -78,7 +76,6 @@ namespace MainProject.Infra.Data.Contexts
         private void ApplyQueryFilter(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>().HasQueryFilter(p => !p.IsRemoved);
-            modelBuilder.Entity<Cue>().HasQueryFilter(p => !p.IsRemoved);
             modelBuilder.Entity<Customer>().HasQueryFilter(p => !p.IsRemoved);
         }
         

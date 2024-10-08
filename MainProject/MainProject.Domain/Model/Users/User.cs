@@ -5,7 +5,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MainProject.Domain.Model.Commons;
-using MainProject.Domain.Model.Cues;
 using MainProject.Domain.Model.Customers;
 using User = MainProject.Domain.Model.Users.User;
 
@@ -34,8 +33,7 @@ namespace MainProject.Domain.Model.Users
 
         public virtual long CustomerId { get; set; }
         
-       
-   public virtual ICollection<Cue> Cues { get; set; }
+        
    
     public virtual ICollection<UserInRole> UserInRoles { get; set; }
     
