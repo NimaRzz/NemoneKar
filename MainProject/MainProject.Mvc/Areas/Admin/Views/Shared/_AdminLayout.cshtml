@@ -1,0 +1,401 @@
+﻿
+@{
+    ViewData["Title"] = "_Layout";
+}
+
+<h1>_Layout</h1>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Metrica - Responsive Bootstrap 4 Admin Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="A premium admin dashboard template by Mannatthemes" name="description" />
+    <meta content="Mannatthemes" name="author" />
+
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="~/Template/assets/images/favicon.ico">
+
+    <!-- App css -->
+    <link href="~/Template/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Template/assets/css/icons.css" rel="stylesheet" type="text/css" />
+    <link href="~/Template/assets/css/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Template/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/kamadatepicker.min.css" rel="stylesheet" type="text/css" />
+    
+    <!-- DataTables -->
+    <link href="~/Template/assets/plugins/datatables/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Template/assets/plugins/datatables/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <!-- Responsive datatable examples -->
+    <link href="~/Template/assets/plugins/datatables/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body>
+
+    <!-- Top Bar Start -->
+    <div class="topbar">
+
+        <!-- LOGO -->
+        <div class="topbar-left">
+            <a href="~/Template/assets/projects/projects-index.html" class="logo">
+                <span>
+                    <img src="~/Template/assets/images/logo-sm.png" alt="logo-small" class="logo-sm">
+                </span>
+                <span>
+                    <img src="~/Template/assets/images/logo-dark.png" alt="logo-large" class="logo-lg">
+                </span>
+            </a>
+        </div>
+        <!--end logo-->
+        <!-- Navbar -->
+        <nav class="navbar-custom">
+            <ul class="list-unstyled topbar-nav float-right mb-0">
+                <li class="hidden-sm">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light" data-toggle="dropdown" href="javascript: void(0);" role="button" aria-haspopup="false" aria-expanded="false">
+                        English <img src="~/Template/assets/images/flags/us_flag.jpg" class="ml-2" height="16" alt=""> <i class="mdi mdi-chevron-down"></i>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="javascript: void(0);"><span> German </span><img src="../assets/images/flags/germany_flag.jpg" alt="" class="ml-2 float-right" height="14"></a>
+                        <a class="dropdown-item" href="javascript: void(0);"><span> Italian </span><img src="../assets/images/flags/italy_flag.jpg" alt="" class="ml-2 float-right" height="14"></a>
+                        <a class="dropdown-item" href="javascript: void(0);"><span> French </span><img src="../assets/images/flags/french_flag.jpg" alt="" class="ml-2 float-right" height="14"></a>
+                        <a class="dropdown-item" href="javascript: void(0);"><span> Spanish </span><img src="../assets/images/flags/spain_flag.jpg" alt="" class="ml-2 float-right" height="14"></a>
+                        <a class="dropdown-item" href="javascript: void(0);"><span> Russian </span><img src="../assets/images/flags/russia_flag.jpg" alt="" class="ml-2 float-right" height="14"></a>
+                    </div>
+                </li>
+
+                <li class="dropdown notification-list">
+                    <a class="nav-link dropdown-toggle arrow-none waves-light waves-effect" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <i class="dripicons-bell noti-icon"></i>
+                        <span class="badge badge-danger badge-pill noti-icon-badge">2</span>
+                    </a>
+                    <div class="dropdown-menu dropdown-lg" style="">
+                        <!-- item-->
+                        <h6 class="dropdown-item-text">
+                            Notifications (18)
+                        </h6>
+                        <div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 371.5px;">
+                            <div class="slimscroll notification-list" style="overflow: hidden; width: auto; height: 371.5px;">
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item active">
+                                    <div class="notify-icon bg-success"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-warning"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-info"><i class="mdi mdi-glass-cocktail"></i></div>
+                                    <p class="notify-details">Your item is shipped<small class="text-muted">It is a long established fact that a reader will</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-primary"><i class="mdi mdi-cart-outline"></i></div>
+                                    <p class="notify-details">Your order is placed<small class="text-muted">Dummy text of the printing and typesetting industry.</small></p>
+                                </a>
+                                <!-- item-->
+                                <a href="javascript:void(0);" class="dropdown-item notify-item">
+                                    <div class="notify-icon bg-danger"><i class="mdi mdi-message"></i></div>
+                                    <p class="notify-details">New Message received<small class="text-muted">You have 87 unread messages</small></p>
+                                </a>
+                            </div><div class="slimScrollBar" style="background: rgb(235, 240, 246); width: 7px; position: absolute; top: 0px; opacity: 1; display: block; border-radius: 7px; z-index: 99; left: 1px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; left: 1px;"></div>
+                        </div>
+                        <!-- All-->
+                        <a href="javascript:void(0);" class="dropdown-item text-center text-primary">
+                            View all <i class="fi-arrow-right"></i>
+                        </a>
+                    </div>
+                </li>
+
+                <li class="dropdown">
+                    <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="~/Template/assets/images/users/user-4.jpg" alt="profile-user" class="rounded-circle">
+                        <span class="ml-1 nav-user-name hidden-sm">Amelia <i class="mdi mdi-chevron-down"></i> </span>
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="dripicons-user text-muted mr-2"></i> Profile</a>
+                        <a class="dropdown-item" href="#"><i class="dripicons-wallet text-muted mr-2"></i> My Wallet</a>
+                        <a class="dropdown-item" href="#"><i class="dripicons-gear text-muted mr-2"></i> Settings</a>
+                        <a class="dropdown-item" href="#"><i class="dripicons-lock text-muted mr-2"></i> Lock screen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="dripicons-exit text-muted mr-2"></i> Logout</a>
+                    </div>
+                </li>
+            </ul><!--end topbar-nav-->
+
+            <ul class="list-unstyled topbar-nav mb-0">
+                <li>
+                    <button class="button-menu-mobile nav-link waves-effect waves-light">
+                        <i class="dripicons-menu nav-icon"></i>
+                    </button>
+                </li>
+                <li class="hide-phone app-search">
+                    <form role="search" class="">
+                        <input type="text" placeholder="Search..." class="form-control">
+                        <a href=""><i class="fas fa-search"></i></a>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+        <!-- end navbar-->
+    </div>
+    <!-- Top Bar End -->
+
+    <div class="page-wrapper">
+        <!-- Left Sidenav -->
+        <div class="left-sidenav">
+            <div class="main-icon-menu">
+                <nav class="nav">
+                    <a href="#MetricaUsers" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="کاربران">
+                        <i class="dripicons-user"></i>
+                    </a><!--end MetricaUsers-->
+
+                    <a href="#MetricaCustomers" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="مشتریان">
+                        <i class="dripicons-user-group"></i>
+                    </a><!--end MetricaCustomers-->
+
+                    <a href="#MetricaCues" class="nav-link" data-toggle="tooltip-custom" data-placement="top" title="" data-original-title="سرنخ ها">
+                        <i class="dripicons-document"></i>
+                    </a><!--end MetricaCues-->
+
+                    <!--end MetricaAuthentication-->
+
+                </nav><!--end nav-->
+            </div><!--end main-icon-menu-->
+
+            <div class="main-menu-inner active">
+                <div class="slimScrollDiv active" style="position: relative; overflow: hidden; width: auto; height: 371.5px;">
+                    <div class="menu-body slimscroll in" style="overflow: hidden; width: auto; height: 371.5px;">
+                        <div id="MetricaUsers" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">کاربران</h6>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="/admin/users?Page=0"><i class="dripicons-user"></i>لیست کاربران</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/users/add"><i class="dripicons-plus"></i>افزودن کاربر جدید</a></li>
+                            </ul>
+                        </div><!-- end Users -->
+                        <div id="MetricaCustomers" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">مشتریان</h6>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="/admin/Customers?Page=0"><i class="dripicons-user-group"></i>لیست مشتریان</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/Customers/add?IsCustomer=true"><i class="dripicons-plus"></i>افزودن مشتری جدید</a></li>
+                            </ul>
+                        </div><!-- end Customers -->
+                        <div id="MetricaCues" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">سرنخ ها</h6>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="/admin/Cues?Page=0"><i class="dripicons-document-edit"></i>لیست سرنخ ها</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/cues/add"><i class="dripicons-document-edit"></i>افزودن سرنخ جدید</a></li>
+                            </ul>
+                        </div><!-- end  Cues-->
+                        <div id="MetricaEcommerce" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Ecommerce</h6>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/ecommerce/ecommerce-index.html"><i class="dripicons-device-desktop"></i>Dashboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/ecommerce/ecommerce-products.html"><i class="dripicons-view-apps"></i>Products</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/ecommerce/ecommerce-product-list.html"><i class="dripicons-list"></i>Product List</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/ecommerce/ecommerce-product-detail.html"><i class="dripicons-article"></i>Product Detail</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/ecommerce/ecommerce-cart.html"><i class="dripicons-cart"></i>Cart</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/ecommerce/ecommerce-checkout.html"><i class="dripicons-card"></i>Checkout</a></li>
+                            </ul>
+                        </div><!-- end Ecommerce -->
+                        <div id="MetricaCRM" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">CRM</h6>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/crm/crm-index.html"><i class="dripicons-monitor"></i>Dashboard</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/crm/crm-contacts.html"><i class="dripicons-user-id"></i>Contacts</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/crm/crm-opportunities.html"><i class="dripicons-lightbulb"></i>Opportunities</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/crm/crm-leads.html"><i class="dripicons-toggles"></i>Leads</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/crm/crm-customers.html"><i class="dripicons-user-group"></i>Customers</a></li>
+                            </ul>
+                        </div><!-- end CRM -->
+                        <div id="MetricaOthers" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Others</h6>
+                            </div>
+                            <ul class="nav metismenu" id="main_menu_side_nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-mail"></i><span class="w-100">Email</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/email-inbox.html">Inbox</a></li>
+                                        <li><a href="~/Template/assets/others/email-read.html">Read Email</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-view-thumb"></i><span class="w-100">UI Elements</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/ui-bootstrap.html">Bootstrap</a></li>
+                                        <li><a href="~/Template/assets/others/ui-animation.html">Animation</a></li>
+                                        <li><a href="~/Template/assets/others/ui-avatar.html">Avatar</a></li>
+                                        <li><a href="~/Template/assets/others/ui-clipboard.html">Clip Board</a></li>
+                                        <li><a href="~/Template/assets/others/ui-files.html">File Manager</a></li>
+                                        <li><a href="~/Template/assets/others/ui-ribbons.html">Ribbons</a></li>
+                                        <li><a href="~/Template/assets/others/ui-dragula.html"><span>Dragula</span></a></li>
+                                        <li><a href="~/Template/assets/others/ui-check-radio.html"><span>Check &amp; Radio</span></a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-anchor"></i><span class="w-100">Advanced UI</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/advanced-rangeslider.html">Range Slider</a></li>
+                                        <li><a href="~/Template/assets/others/advanced-sweetalerts.html">Sweet Alerts</a></li>
+                                        <li><a href="~/Template/assets/others/advanced-nestable.html">Nestable List</a></li>
+                                        <li><a href="~/Template/assets/others/advanced-ratings.html">Ratings</a></li>
+                                        <li><a href="~/Template/assets/others/advanced-highlight.html">Highlight</a></li>
+                                        <li><a href="~/Template/assets/others/advanced-session.html">Session Timeout</a></li>
+                                        <li><a href="~/Template/assets/others/advanced-idle-timer.html">Idle Timer</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-document"></i><span class="w-100">Forms</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/forms-elements.html">Basic Elements</a></li>
+                                        <li><a href="~/Template/assets/others/forms-advanced.html">Advance Elements</a></li>
+                                        <li><a href="~/Template/assets/others/forms-validation.html">Validation</a></li>
+                                        <li><a href="~/Template/assets/others/forms-wizard.html">Wizard</a></li>
+                                        <li><a href="~/Template/assets/others/forms-editors.html">Editors</a></li>
+                                        <li><a href="~/Template/assets/others/forms-repeater.html">Repeater</a></li>
+                                        <li><a href="~/Template/assets/others/forms-x-editable.html">X Editable</a></li>
+                                        <li><a href="~/Template/assets/others/forms-uploads.html">File Upload</a></li>
+                                        <li><a href="~/Template/assets/others/forms-img-crop.html">Image Crop</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-graph-line"></i><span class="w-100">Charts</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/charts-apex.html">Apex</a></li>
+                                        <li><a href="~/Template/assets/others/charts-morris.html">Morris</a></li>
+                                        <li><a href="~/Template/assets/others/charts-chartist.html">Chartist</a></li>
+                                        <li><a href="~/Template/assets/others/charts-flot.html">Flot</a></li>
+                                        <li><a href="~/Template/assets/others/charts-peity.html">Peity</a></li>
+                                        <li><a href="~/Template/assets/others/charts-chartjs.html">Chartjs</a></li>
+                                        <li><a href="~/Template/assets/others/charts-sparkline.html">Sparkline</a></li>
+                                        <li><a href="~/Template/assets/others/charts-knob.html">Jquery Knob</a></li>
+                                        <li><a href="~/Template/assets/others/charts-justgage.html">JustGage</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-view-list-large"></i><span class="w-100">Tables</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/tables-basic.html">Basic</a></li>
+                                        <li><a href="~/Template/assets/others/tables-datatable.html">Datatables</a></li>
+                                        <li><a href="~/Template/assets/others/tables-responsive.html">Responsive</a></li>
+                                        <li><a href="~/Template/assets/others/tables-footable.html">Footable</a></li>
+                                        <li><a href="~/Template/assets/others/tables-jsgrid.html">Jsgrid</a></li>
+                                        <li><a href="~/Template/assets/others/tables-editable.html">Editable</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-headset"></i><span class="w-100">Icons</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/icons-materialdesign.html">Material Design</a></li>
+                                        <li><a href="~/Template/assets/others/icons-dripicons.html">Dripicons</a></li>
+                                        <li><a href="~/Template/assets/others/icons-fontawesome.html">Font awesome</a></li>
+                                        <li><a href="~/Template/assets/others/icons-themify.html">Themify</a></li>
+                                        <li><a href="~/Template/assets/others/icons-typicons.html">Typicons</a></li>
+                                        <li><a href="~/Template/assets/others/icons-emoji.html">Emoji <i class="em em-ok_hand"></i></a></li>
+                                        <li><a href="~/Template/assets/others/icons-svg.html">SVG</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-map"></i><span class="w-100">Maps</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/maps-google.html">Google Maps</a></li>
+                                        <li><a href="~/Template/assets/others/maps-vector.html">Vector Maps</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#"><i class="dripicons-article"></i><span class="w-100">Email Templates</span><span class="menu-arrow"><i class="mdi mdi-chevron-right"></i></span></a>
+                                    <ul class="nav-second-level mm-collapse" aria-expanded="false">
+                                        <li><a href="~/Template/assets/others/email-templates-basic.html">Basic Action Email</a></li>
+                                        <li><a href="~/Template/assets/others/email-templates-alert.html">Alert Email</a></li>
+                                        <li><a href="~/Template/assets/others/email-templates-billing.html">Billing Email</a></li>
+                                    </ul>
+                                </li><!--end nav-item-->
+                            </ul><!--end nav-->
+                        </div><!-- end Others -->
+
+                        <div id="MetricaPages" class="main-icon-menu-pane active mm-active">
+                            <div class="title-box active">
+                                <h6 class="menu-title">Pages</h6>
+                            </div>
+                            <ul class="nav in mm-show">
+                                <li class="nav-item"><a class="nav-link" href="/admin/users"><i class="dripicons-user"></i>کاربران</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/customers"><i class="dripicons-user-group"></i>مشتریان</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/cues"><i class="dripicons-document"></i>سرنخ ها</a></li>
+                            </ul>
+                        </div><!-- end Pages -->
+                        <div id="MetricaAuthentication" class="main-icon-menu-pane">
+                            <div class="title-box">
+                                <h6 class="menu-title">Authentication</h6>
+                            </div>
+                            <ul class="nav">
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/authentication/auth-login.html"><i class="dripicons-enter"></i>Log in</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/authentication/auth-register.html"><i class="dripicons-pencil"></i>Register</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/authentication/auth-recover-pw.html"><i class="dripicons-clockwise"></i>Recover Password</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/authentication/auth-lock-screen.html"><i class="dripicons-lock"></i>Lock Screen</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/authentication/auth-404.html"><i class="dripicons-warning"></i>Error 404</a></li>
+                                <li class="nav-item"><a class="nav-link" href="~/Template/assets/authentication/auth-500.html"><i class="dripicons-wrong"></i>Error 500</a></li>
+                            </ul>
+                        </div><!-- end Authentication-->
+                    </div><div class="slimScrollBar" style="background: rgb(235, 240, 246); width: 7px; position: absolute; top: 0px; opacity: 1; display: none; border-radius: 7px; z-index: 99; left: 1px; height: 564.02px;"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-radius: 7px; background: rgb(51, 51, 51); opacity: 0.2; z-index: 90; left: 1px;"></div>
+                </div><!--end menu-body-->
+            </div><!-- end main-menu-inner-->
+        </div>
+        <!-- end left-sidenav-->
+        <!-- Page Content-->
+        @RenderBody()
+        <!-- end page content -->
+        </div>
+        <!-- end page-wrapper -->
+        <!-- jQuery  -->
+        <script src="~/Template/assets/js/jquery.min.js"></script>
+        <script src="~/Template/assets/js/bootstrap.bundle.min.js"></script>
+        <script src="~/Template/assets/js/metisMenu.min.js"></script>
+        <script src="~/Template/assets/js/waves.min.js"></script>
+        <script src="~/Template/assets/js/jquery.slimscroll.min.js"></script>
+
+        <!-- App js -->
+        <script src="~/Template/assets/js/app.js"></script>
+        <script src="~/js/kamadatepicker.min.js"></script>
+        
+        
+        <!-- Required datatable js -->
+    <script src="~/Template/assets/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="~/Template/assets/plugins/datatables/dataTables.bootstrap4.min.js"></script>
+        <!-- Buttons examples -->
+    <script src="~/Template/assets/plugins/datatables/dataTables.buttons.min.js"></script>
+    <script src="~/Template/assets/plugins/datatables/buttons.bootstrap4.min.js"></script>
+        <!-- <script src="../assets/plugins/datatables/jszip.min.js"></script> -->
+    <script src="~/Template/assets/plugins/datatables/pdfmake.min.js"></script>
+    <script src="~/Template/assets/plugins/datatables/vfs_fonts.js"></script>
+    <script src="~/Template/assets/plugins/datatables/buttons.html5.min.js"></script>
+    <script src="~/Template/assets/plugins/datatables/buttons.print.min.js"></script>
+    <script src="~/Template/assets/plugins/datatables/buttons.colVis.min.js"></script>
+        <!-- Responsive examples -->
+    <script src="~/Template/assets/plugins/datatables/dataTables.responsive.min.js"></script>
+    <script src="~/Template/assets/plugins/datatables/responsive.bootstrap4.min.js"></script>
+    <script src="~/Template/assets/pages/jquery.datatable.init.js"></script>
+
+
+        @RenderSection("Modals", false)
+
+        @RenderSection("Scripts", false)
+        </body>
+
+       
+</html>

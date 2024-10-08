@@ -1,0 +1,171 @@
+﻿@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Add";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="row w-100">
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="mt-0 header-title">افزودن مشتری جدید</h4>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                       
+                        <div class="form-group row">
+                            <label for="user" class="col-sm-2 col-form-label text-right">کاربر:</label>
+                            <select class="form-select" name="user" id="user" asp-items="@ViewBag.Users"></select>
+                        </div>
+                      
+                        <div class="form-group row">
+                            <label for="phone" class="col-sm-2 col-form-label text-right">تلفن:</label>
+                            <input class="form-control" type="text" id="phone">
+                        </div>
+
+                        <div class="form-group row">
+                            <label for="address" class="col-sm-2 col-form-label text-right">ادرس:</label>
+                            <textarea class="form-control" id="address" rows="3"></textarea>
+                        </div>
+
+                        <div class="form-group row"> 
+                            <label for="province" class="col-sm-2 col-form-label text-right">استان:</label>
+                            <select name="state" onChange="iranwebsv(this.value);" id="province">
+                                <option value="0">لطفا استان را انتخاب نمایید</option>
+                                <option value="1">تهران</option>
+                                <option value="2">یزد</option>
+                                <option value="3">فارس</option>
+                            </select>
+                        </div>
+                        <div class="form-group row">
+                            <label for="city" class="col-sm-2 col-form-label text-right">شهر:</label>
+                            <select name="city" id="city">
+                                <option value="0">لطفا شهر را انتخاب نمایید</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group row">
+                            <div class="col-sm-10">
+                                <button class="btn btn-success" id="addButton" onclick="AddCustomer()">افزودن</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div><!--end card-body-->
+        </div><!--end card-->
+    </div><!--end col-->
+</div>
+
+@section Scripts {
+
+    <link href="~/Sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <script src="~/Sweetalert2/sweetalert2.min.js"></script>
+
+    <script>
+
+        function AddCustomer() {
+
+
+            swal.fire({
+                title: 'افزودن مشتری جدید',
+                text: 'از افزودن مشتری جدید مطمئن هستید؟',
+                icon: 'info',
+                showCancelButton: true,
+                cancelButtonColor: '#fc0000',
+                confirmButtonColor: '#039e00',
+                cancelButtonText: 'خیر',
+                confirmButtonText: 'بله، افزودن مشتری جدید انجام شود'
+
+            }).then((result) => {
+                if (result.value) {
+
+
+                    var data = new FormData();
+
+                    data.append('UserId', $("#user").val());
+                    data.append('Address', $("#address").val());
+                    data.append('CityId', $("#city").val());
+                    data.append('ProvinceId', $("#province").val());
+                    data.append('Phone', $("#phone").val());
+
+                }
+               
+
+                $.ajax({
+                    type: 'POST',
+                    contentType: false,
+                    processData: false,
+                    url: '/admin/customers/Add',
+                    data: data,
+                    success: function (data) {
+                        if (data.isSuccess == true) {
+                            swal.fire(
+                                'موفق',
+                                data.message,
+                                'success'
+                            ).then(function (isConfirm) {
+
+                                window.location.replace("/admin/customers");
+
+                            });
+                        }
+                        else {
+                            swal.fire(
+                                'هشدار',
+                                data.message,
+                                'warning'
+                            );
+                        }
+                    },
+                    error: function (xhr, ajaxOption, thrownError) {
+
+                        alert(xhr.status);
+                        alert(thrownError);
+
+                    }
+
+                });
+
+            })
+        }
+
+
+
+		function iranwebsv(state) {
+			with (document.getElementById('city')) {
+				options.length = 0;
+
+				if (state == 0) {
+					options[0] = new Option('لطفا استان را انتخاب نمایید', '0');
+				}
+
+				if (state == 1) {
+					options[0] = new Option('لطفا شهر را انتخاب نمایید', '0');
+					options[1] = new Option('تهران', '1');
+					options[2] = new Option('ری', '2');
+					options[3] = new Option('پاک دشت', '3');
+				}
+				if (state == 2) {
+					options[0] = new Option('لطفا شهر را انتخاب نمایید', '0');
+					options[1] = new Option('یزد', '4');
+					options[2] = new Option('مهریز', '5');
+					options[3] = new Option('ابر کوه', '6');
+				}
+				if (state == 3) {
+					options[0] = new Option('لطفا شهر را انتخاب نمایید', '0');
+					options[1] = new Option('شیراز', '7');
+					options[2] = new Option('نی ریز', '8');
+					options[3] = new Option('اباده', '9');
+					
+				}
+				
+			}
+		}
+
+
+    </script>
+
+}

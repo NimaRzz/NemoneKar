@@ -1,0 +1,176 @@
+﻿@addTagHelper *, LazZiya.TagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+@{
+    ViewData["Title"] = "FilterCues";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    int pageNumber = 1;
+    int pageSize = 20;
+}
+
+<div class="row w-100">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mt-0 header-title">گزارش سرنخ ها</h4>
+                <br />
+                <div class="form-group row">
+                    <label for="customer" class="col-sm-2 col-form-label text-right">مشتری:</label>
+                    <select class="form-select" name="customer" id="customer" asp-items="@ViewBag.Customers"></select>
+                </div>
+                <div class="form-group row">
+                    <label for="from" class="col-sm-2 col-form-label text-right">از تاریخ:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="from">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="to" class="col-sm-2 col-form-label text-right">تا تاریخ:</label>
+                    <div class="col-sm-10">
+                        <input class="form-control" type="text" id="to">
+                    </div>
+                </div>
+
+                <button onclick="Filter()" class="btn btn-success">اعمال فیلتر</button>
+                <br />
+
+                <table class="table mb-0" id="my-table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>مشتری</th>
+                            <th>توضیحات</th>
+                            <th>تاریخ</th>
+                            <th class="tabledit-toolbar-column"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.CuesFilter)
+                        {
+
+
+                            <tr>
+                                <th>@item.CueId</th>
+                                <th>
+
+                                    @item.Customer;
+
+
+                                </th>
+                                <th>
+
+                                    @item.Description;
+
+                                </th>
+                                <th>@item.ShowDate</th>
+
+                            </tr>
+
+
+                        }
+                    </tbody>
+                </table><!--end table-->
+            </div><!--end card-body-->
+            <div class="pagination-product">
+                <nav aria-label="Page navigation example">
+                    <paging total-records="@Model.Rows"
+                            page-no="@pageNumber==0?1:pageNumber"
+                            page-size="@pageSize==0?20:pageNumber"
+                            show-prev-next="true"
+                            show-total-pages="false"
+                            show-total-records="false"
+                            show-page-size-nav="true"
+                            show-first-numbered-page="true"
+                            show-last-numbered-page="true"
+                            query-string-key-page-no="Page"
+                            query-string-key-page-size="PageSize"
+                            query-string-value="@@(Request.QueryString.Value)"
+                            gap-size="2">
+                    </paging>
+
+                </nav>
+            </div>
+        </div><!--end card-->
+    </div> <!-- end col -->
+</div>
+
+@section Scripts {
+    <link href="~/Sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <script src="~/Sweetalert2/sweetalert2.min.js"></script>
+
+    <script>
+
+       
+            function Filter() {
+
+            var From = $('#from').val();
+            var To = $('#to').val();
+            var Customer = $('#customer').val();
+
+            var postData = {
+                'From' : From,
+                'To' : To,
+                'Customer' : Customer
+            };
+
+
+            $.ajax({
+                contentType: 'application/x-www-form-urlencoded',
+                dataType: 'json',
+                type: 'POST',
+                url: '/admin/users/FilterReport',
+                data: postData,
+                success: function (data) {
+                    if (data.isSuccess == true) {
+
+                        });
+                    }
+                    else {
+                        swal.fire(
+                            'هشدار',
+                            data.message,
+                            'warning'
+                        );
+                    }
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                }
+
+            });
+        kamaDatepicker('from', {
+
+            placeholder: 'YYYY/MM/DD',
+            format: 'YYYY/MM/DD',
+            forceFarsiDigits: true,
+            markToday: true,
+            markHolidays: true,
+            highlightSelectedDay: true,
+            gotoToday: true
+
+        });
+
+        kamaDatepicker('to', {
+
+            placeholder: 'YYYY/MM/DD',
+            format: 'YYYY/MM/DD',
+            forceFarsiDigits: true,
+            markToday: true,
+            markHolidays: true,
+            highlightSelectedDay: true,
+            gotoToday: true
+
+        });
+
+    </script>
+}
+
+
+
+
+
+
+

@@ -1,0 +1,281 @@
+﻿@addTagHelper *, LazZiya.TagHelpers
+@model MainProject.Application.Services.Users.Queries.GetUsersForAdmin.ResultGetUserDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<div class="row col-0">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mt-0 header-title">لیست مشتریان</h4>
+                <div id="datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table id="datatable" class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid" aria-describedby="datatable_info">
+                                <thead>
+                                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 184.2px;" aria-sort="ascending">Id</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 279.2px;">نام کاربری</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 135.2px;">پست الکترونیک</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 63.2px;">فعال</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 124.2px;">ادمین</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 97px;">سطح دسترسی</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 97px;">تغییرات</th></tr>
+                                </thead>
+
+
+                                <tbody>
+                                @foreach (var item in Model.Users)
+                                {
+                                    <tr role="row" class="odd">
+                                        <td>@item.UserId</td>
+
+                                        <td>
+                                            @{
+                                                var username = item.UserName.Length > 30 ? item.UserName.Substring(0, 30) + "..." : item.UserName;
+                                            }
+                                            @username
+                                        </td>
+
+                                        <td>
+                                            @{
+                                                var email = item.Email.Length > 20 ? item.Email.Substring(0, 20) + "..." : item.Email;
+                                            }
+                                            @email
+                                        </td>
+
+                                        <td>
+                                            @if (!item.IsActive)
+                                            {
+
+                                                <span class="icon-red"><i class="dripicons-cross"></i></span>
+                                            }
+                                            else
+                                            {
+                                                <span class="icon-green"> <i class="dripicons-checkmark"></i></span>
+                                            }
+                                        </td>
+                                        <td>
+                                            @if (!item.IsAdmin)
+                                            {
+                                                <span class="icon-red"><i class="dripicons-cross"></i></span>
+                                            }
+                                            else
+                                            {
+                                                <span class="icon-green"> <i class="dripicons-checkmark"></i></span>
+                                            }
+
+                                        </td>
+                                        <td>
+                                            @{
+                                                var Roles = item.Roles == null ? "بدون نقش" : string.Join(", ", item.Roles);
+                                            }
+                                            @Roles
+                                        </td>
+                                        <td>
+                                            <button class="btn btn-primary" onclick="ShowModalEditUser('@item.UserId', '@item.UserName', '@item.Email', @(item.IsActive.ToString().ToLower()), @(item.IsAdmin.ToString().ToLower()))">ویرایش کاربر</button>
+                                            <button class="btn btn-danger" onclick="DeleteUser('@item.UserId')">حذف کاربر</button>
+
+
+                                        </td>
+
+
+                                    </tr>
+
+                                }
+                                   
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><div class="row"><div class="col-sm-12 col-md-5"></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate"></div></div></div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div>
+
+
+
+
+
+
+        @section Scripts {
+            <link href="~/Sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+            <script src="~/Sweetalert2/sweetalert2.min.js"></script>
+
+            <script>
+
+                function DeleteUser(UserId) {
+                    swal.fire({
+                        title: 'حذف کاربر',
+                        text: 'از حذف کاربر مطمئن هستید؟',
+                        icon: 'info',
+                        showCancelButton: true,
+                        cancelButtonColor: '#fc0000',
+                        confirmButtonColor: '#039e00',
+                        cancelButtonText: 'خیر',
+                        confirmButtonText: 'بله، حذف انجام شود'
+                    }).then(function (result) {
+                        if (result.value) {
+
+                            var postData = {
+                                'UserId': UserId
+                            }
+
+
+                            $.ajax({
+                                contentType: 'application/x-www-form-urlencoded',
+                                dataType: 'json',
+                                type: 'POST',
+                                url: '/admin/users/Delete',
+                                data: postData,
+                                success: function (data) {
+                                    if (data.isSuccess == true) {
+                                        swal.fire(
+                                            'موفق',
+                                            data.message,
+                                            'success'
+                                        ).then(function (isConfirm) {
+                                            window.location.reload();
+                                        });
+                                    }
+                                    else {
+                                        swal.fire(
+                                            'هشدار',
+                                            data.message,
+                                            'warning'
+                                        );
+                                    }
+                                },
+                                error: function (request, status, error) {
+                                    alert(request.responseText);
+                                }
+
+                            });
+                        }
+                    })
+                }
+
+
+                function EditUser() {
+
+
+
+
+
+
+
+                    var data = new FormData();
+
+
+                    data.append('UserId', $("#Edit_UserId").val());
+                    data.append('Email', $("#Edit_Email").val());
+                    data.append('Password', $("#Edit_Password").val());
+                    data.append('UserName', $("#Edit_Username").val());
+                    data.append('IsActive', $("#Edit_IsActive").is(":checked"));
+                    data.append('IsAdmin', $("#Edit_IsAdmin").is(":checked"));
+
+
+                    $.ajax({
+                        contentType: false,
+                        processData: false,
+                        dataType: 'json',
+                        type: 'POST',
+                        url: '/admin/users/Edit',
+                        data: data,
+                        success: function (data) {
+                            if (data.isSuccess == true) {
+                                swal.fire(
+                                    'موفق',
+                                    data.message,
+                                    'success'
+                                ).then(function (isConfirm) {
+                                    window.location.reload();
+                                });
+
+                            }
+                            else {
+                                swal.fire(
+                                    'هشدار',
+                                    data.message,
+                                    'warning'
+                                ).then(function (isConfirm) {
+                                    window.location.reload();
+                                });
+                            }
+                            $('#EditUser').modal('hide');
+                        },
+                        error: function (request, status, error) {
+                            alert(request.responseText);
+                        }
+
+                    });
+
+
+                }
+
+
+                function ShowModalEditUser(UserId, Username, Email, IsActive, IsAdmin) {
+
+                    $('#Edit_UserId').val(UserId);
+                    $('#Edit_Username').val(Username);
+                    $('#Edit_Email').val(Email);
+                    $('#Edit_IsActive').prop('checked', IsActive);
+                    $('#Edit_IsAdmin').prop('checked', IsAdmin);
+
+
+                    $('#EditUser').modal('show');
+
+
+                }
+
+            </script>
+        }
+
+
+
+        @section Modals
+        {
+            <!-- Modal Edit User -->
+            <div class="modal fade" id="EditUser" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">ویرایش کاربر</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-xl-12 col-lg-12 col-md-12 mb-1">
+                                <fieldset class="form-group">
+                                    <input type="hidden" id="Edit_UserId" />
+                                    <label for="basicInput">نام کاربری</label>
+                                    <input type="text" class="form-control" id="Edit_Username">
+                                    <label for="basicInput">ایمیل</label>
+                                    <input type="email" class="form-control" id="Edit_Email">
+                                    <label for="basicInput">رمز عبور</label>
+                                    <input type="password" class="form-control" id="Edit_Password">
+                                    <label for="basicInput">ادمین</label>
+                                    <input type="checkbox" id="Edit_IsAdmin">
+                                    <label for="basicInput">فعال</label>
+                                    <input type="checkbox" id="Edit_IsActive">
+                                </fieldset>
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <a class="btn btn-secondary" data-dismiss="modal">بستن</a>
+                            <a class="btn btn-primary" onclick="EditUser()">اعمال تغییرات</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+
+
+
+
+

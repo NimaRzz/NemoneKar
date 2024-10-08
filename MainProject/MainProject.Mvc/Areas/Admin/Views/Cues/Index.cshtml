@@ -1,0 +1,275 @@
+﻿@addTagHelper *, LazZiya.TagHelpers
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+    int pageNumber = 1;
+    int pageSize = 20;
+}
+
+<div class="row w-100">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mt-0 header-title">لیست سرنخ ها</h4>
+                <br />
+                <table class="table mb-0" id="my-table">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>مشتری</th>
+                            <th>توضیحات</th>
+                            <th>تاریخ</th>
+                            <th class="tabledit-toolbar-column"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model.Cues)
+                        {
+
+
+                             <tr>
+                                <th>@item.CueId</th>
+                                <th>
+                                    @{
+                                        var customer = item.Customer.Length > 30 ? item.Customer.Substring(0, 30) + "..." : item.Customer;
+                                    }
+                                    @customer
+                                </th>
+                                <th>
+                                    @{
+                                        var description = item.Description.Length > 20 ? item.Description.Substring(0, 20) + "..." : item.Description;
+                                    }
+                                    @description
+                                </th>
+                                <th>@item.ShowDate</th>
+
+                             <th>
+                                    <button class="btn btn-primary" onclick="ShowModalEditCue('@item.CueId', '@item.Customer', '@item.ShowDate', '@item.Description')">ویرایش سرنخ</button>
+                                    <button class="btn btn-danger" onclick="DeleteCue('@item.CueId')">حذف سرنخ</button>
+
+
+                                </th>
+
+
+                            </tr>
+
+
+                        }
+                    </tbody>
+                </table><!--end table-->
+            </div><!--end card-body-->
+            <div class="pagination-product">
+                <nav aria-label="Page navigation example">
+                    <paging total-records="@Model.Rows"
+                            page-no="@pageNumber==0?1:pageNumber"
+                            page-size="@pageSize==0?20:pageNumber"
+                            show-prev-next="true"
+                            show-total-pages="false"
+                            show-total-records="false"
+                            show-page-size-nav="true"
+                            show-first-numbered-page="true"
+                            show-last-numbered-page="true"
+                            query-string-key-page-no="Page"
+                            query-string-key-page-size="PageSize"
+                            query-string-value="@@(Request.QueryString.Value)"
+                            gap-size="2">
+                    </paging>
+
+                </nav>
+            </div>
+        </div><!--end card-->
+    </div> <!-- end col -->
+</div>
+
+@section Scripts {
+    <link href="~/Sweetalert2/sweetalert2.min.css" rel="stylesheet" />
+    <script src="~/Sweetalert2/sweetalert2.min.js"></script>
+
+    <script>
+
+        function DeleteCue(CueId){
+            swal.fire({
+                 title: 'حذف سرنخ',
+                text: 'از حذف سرنخ مطمئن هستید؟',
+                icon: 'info',
+                showCancelButton: true,
+                cancelButtonColor: '#fc0000',
+                confirmButtonColor: '#039e00',
+                cancelButtonText: 'خیر',
+                confirmButtonText: 'بله، حذف انجام شود'
+            }).then(function(result) {
+                if (result.value) {
+
+                    var postData = {
+                        'CueId': CueId
+                    };
+
+                $.ajax({
+                contentType: 'application/x-www-form-urlencoded',
+                dataType: 'json',
+                type: 'POST',
+                url: '/admin/cues/Delete',
+                data: postData,
+                    success: function (data) {
+                        if (data.isSuccess == true) {
+                            swal.fire(
+                                'موفق',
+                                data.message,
+                                'success'
+                            ).then(function (isConfirm) {
+                                window.location.reload();
+                            });
+                        }
+                        else{
+                            swal.fire(
+                                'هشدار',
+                                data.message,
+                                'warning'
+                            );
+                        }
+                    },
+                    error: function (request, status, error) {
+                        alert(request.responseText);
+                    }
+
+             });
+            }
+                    })
+                }
+
+
+                function EditCue(){
+
+
+
+
+
+
+
+                var data = new FormData();
+
+
+                data.append('CueId', $("#Edit_CueId").val());
+                data.append('Customer', $("#Edit_Customer").val());
+                data.append('Date', $("#Edit_Date").val());
+                data.append('Description', $("#Edit_Description").val());
+ 
+
+
+
+
+                        $.ajax({
+                            contentType: false,
+                            processData: false,
+                            dataType: 'json',
+                            type: 'POST',
+                            url: '/admin/cues/Edit',
+                            data: data,
+                            success: function (data) {
+                                if (data.isSuccess == true) {
+                                    swal.fire(
+                                        'موفق',
+                                        data.message,
+                                        'success'
+                                    ).then(function (isConfirm) {
+                                        window.location.reload();
+                                    });
+                                }
+                                else {
+                                    swal.fire(
+                                        'هشدار',
+                                        data.message,
+                                        'warning'
+                                    );
+                                }
+                        $('#EditCue').modal('hide');
+                    },
+                            error: function (request, status, error) {
+
+                                alert(request.responseText);
+                            }
+
+                        });
+
+
+                }
+
+            function ShowModalEditCue(CueId, Customer, Date, Description) {
+
+
+
+
+                    $('#Edit_CueId').val(CueId);
+                    $('#Edit_Customer').val(Customer);
+                    $('#Edit_Date').val(Date);
+                    $('#Edit_Description').val(Description);
+
+
+
+                    $('#EditCue').modal('show');
+
+           }
+
+                             kamaDatepicker('Edit_Date', {
+
+                    placeholder: 'YYYY/MM/DD',
+                        format: 'YYYY/MM/DD',
+                    closeAfterSelect: false,
+                    forceFarsiDigits: true,
+                    markToday: true,
+                    markHolidays: true,
+                    highlightSelectedDay: true,
+                    gotoToday: true
+
+                });
+
+                        
+    </script>
+}
+
+
+
+@section Modals
+        {
+    <!-- Modal Edit Cue -->
+    <div class="modal fade" id="EditCue" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">ویرایش سرنخ</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="col-xl-12 col-lg-12 col-md-12 mb-1">
+                        <fieldset class="form-group">
+                            <input type="hidden" id="Edit_CueId" />
+                            <label for="basicInput">مشتری</label>
+                            <input type="text" class="form-control" id="Edit_Customer">
+                            <label for="basicInput">توضیحات</label>
+                            <input type="text" class="form-control" id="Edit_Description">
+                            <label for="basicInput">تاریخ</label>
+                            <input type="text" class="form-control" id="Edit_Date">
+
+                        </fieldset>
+                    </div>
+
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-secondary" data-dismiss="modal">بستن</a>
+                    <a class="btn btn-primary" onclick="EditCue()">اعمال تغییرات</a>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+
+
+
+
+

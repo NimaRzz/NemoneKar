@@ -1,0 +1,423 @@
+﻿@addTagHelper *, LazZiya.TagHelpers
+@model MainProject.Application.Services.Customers.Queries.GetCustomersForAdmin.ResultGetCustomerDto
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="row col-0">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mt-0 header-title">لیست کاربران</h4>
+                <div id="datatable_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <table id="datatable" class="table table-bordered dt-responsive nowrap dataTable no-footer dtr-inline" style="border-collapse: collapse; border-spacing: 0px; width: 100%;" role="grid" aria-describedby="datatable_info">
+                                <thead>
+                                    <tr role="row"><th class="sorting_asc" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 184.2px;" aria-sort="ascending">Id</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 279.2px;">نام مشتریان</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 135.2px;">شماره</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 63.2px;">استان</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 124.2px;">شهر</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 97px;">ادرس</th><th class="sorting" tabindex="0" aria-controls="datatable" rowspan="1" colspan="1" style="width: 97px;">تغییرات</th></tr>
+                                </thead>
+
+
+                                <tbody>
+                                @foreach (var item in Model.Customers)
+                                {
+
+                        
+                                    <tr>
+                                        <th>@item.CustomerId</th>
+                                        <th>
+                                            @{
+                                                var username = item.UserName.Length > 30 ? item.UserName.Substring(0, 30) + "..." : item.UserName;
+                                            }
+                                            @username
+                                        </th>
+                                        <th>@item.Phone</th>
+                                        <th>
+                                            @item.Province.Name
+                                        </th>
+                                        <th>@item.City.Name</th>
+                                        <th>
+                                            @{
+                                                var address = item.Address.Length > 15 ? item.Address.Substring(0, 15) + "..." : item.Address;
+                                            }
+                                            @address
+                                        </th>
+
+
+
+                                        <th>
+                                            <button class="btn btn-primary" onclick="ShowModalEditCustomer('@item.CustomerId', '@item.Phone', '@item.Province.Id', '@item.City.Id', '@item.Address')">ویرایش و مشاهده مشتری</button>
+                                            <button class="btn btn-danger" onclick="DeleteCustomer('@item.CustomerId')">حذف مشتری</button>
+                                    
+
+                                        </th>
+
+
+                                    </tr>
+
+
+                                }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div><div class="row"><div class="col-sm-12 col-md-5"></div><div class="col-sm-12 col-md-7"><div class="dataTables_paginate paging_simple_numbers" id="datatable_paginate"></div></div></div>
+                </div>
+
+            </div>
+        </div>
+    </div> <!-- end col -->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@* <div class="row w-100">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-body">
+
+                <h4 class="mt-0 header-title">لیست مشتریان</h4>
+                <br/>
+
+                <table class="table mb-0" id="my-table">
+                    <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>نام مشتریان</th>
+                        <th>شماره</th>
+                        <th>استان</th>
+                        <th>شهر</th>
+                        <th>آدرس</th>
+                        <th class="tabledit-toolbar-column"></th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    
+                    @foreach (var item in Model.Customers)
+                    {
+
+                        
+                            <tr>
+                                <th>@item.CustomerId</th>
+                                <th>
+                                    @{
+                                        var username = item.UserName.Length > 30 ? item.UserName.Substring(0, 30) + "..." : item.UserName;
+                                    }
+                                    @username
+                                </th>
+                                <th>@item.Phone</th>
+                                <th>
+                                    @item.Province.Name
+                                </th>
+                                <th>@item.City.Name</th>
+                                <th>
+                                    @{
+                                        var address = item.Address.Length > 15 ? item.Address.Substring(0, 15) + "..." : item.Address;
+                                    }
+                                    @address
+                                </th>
+
+
+
+                                <th>
+                                    <button class="btn btn-primary" onclick="ShowModalEditCustomer('@item.CustomerId', '@item.Phone', '@item.Province.Id', '@item.City.Id', '@item.Address')">ویرایش و مشاهده مشتری</button>
+                                    <button class="btn btn-danger" onclick="DeleteCustomer('@item.CustomerId')">حذف مشتری</button>
+                                    
+
+                                </th>
+
+
+                            </tr>
+
+
+                    }
+                    </tbody>
+                </table><!--end table-->
+            </div><!--end card-body-->
+            <div class="pagination-product">
+                <nav aria-label="Page navigation example">
+                    <paging total-records="@Model.Rows"
+                            page-no="pageNumber==0?1:pageNumber"
+                            page-size="pageSize==0?20:pageNumber"
+                            show-prev-next="true"
+                            show-total-pages="false"
+                            show-total-records="false"
+                            show-page-size-nav="true"
+                            show-first-numbered-page="true"
+                            show-last-numbered-page="true"
+                            query-string-key-page-no="Page"
+                            query-string-key-page-size="PageSize"
+                            query-string-value="@@(Request.QueryString.Value)"
+                            gap-size="2">
+                    </paging>
+
+                </nav>
+            </div>
+        </div><!--end card-->
+    </div> <!-- end col -->
+</div> *@
+
+@section Scripts{
+    <link href="~/Sweetalert2/sweetalert2.min.css" rel="stylesheet"/>
+    <script src="~/Sweetalert2/sweetalert2.min.js"></script>
+
+    <script>
+    
+    function DeleteCustomer(CustomerId){
+        swal.fire({
+             title: 'حذف مشتری',
+                text: 'از حذف مشتری مطمئن هستید؟',
+            icon: 'info',
+            showCancelButton: true,
+            cancelButtonColor: '#fc0000',
+            confirmButtonColor: '#039e00',
+            cancelButtonText: 'خیر',
+            confirmButtonText: 'بله، حذف انجام شود'
+        }).then(function(result) {
+            if (result.value) {
+               
+                var postData = {
+                    'CustomerId': CustomerId
+                };
+        
+            $.ajax({
+            contentType: 'application/x-www-form-urlencoded',
+            dataType: 'json',
+            type: 'POST',
+            url: '/admin/customers/Delete',
+            data: postData,
+                success: function (data) {
+                    if (data.isSuccess == true) {
+                        swal.fire(
+                            'موفق',
+                            data.message,
+                            'success'
+                        ).then(function (isConfirm) {
+                            window.location.reload();
+                        });
+                    }
+                    else{
+                        swal.fire(
+                            'هشدار',
+                            data.message,
+                            'warning'
+                        );
+                    }
+                },
+                error: function (request, status, error) {
+                    alert(request.responseText);
+                }
+
+         });
+        }
+                })
+            }
+        
+
+            function EditCustomer(){
+
+
+
+
+
+
+
+            var data = new FormData();
+
+
+            data.append('CustomerId', $("#Edit_CustomerId").val());
+            data.append('Phone', $("#Edit_Phone").val());
+            data.append('ProvinceId', $("#Edit_Province").val());
+            data.append('CityId', $("#Edit_City").val());
+            data.append('Address', $("#Edit_Address").val()); 
+
+         
+
+
+
+                 
+
+                    $.ajax({
+                        contentType: false,
+                        processData: false,
+                        dataType: 'json',
+                        type: 'POST',
+                        url: '/admin/customers/Edit',
+                        data: data,
+                        success: function (data) {
+                            if (data.isSuccess == true) {
+                                swal.fire(
+                                    'موفق',
+                                    data.message,
+                                    'success'
+                                ).then(function (isConfirm) {
+                                    window.location.reload();
+                                });
+                            }
+                            else {
+                                swal.fire(
+                                    'هشدار',
+                                    data.message,
+                                    'warning'
+                                );
+                            }
+                    $('#EditCustomer').modal('hide');
+                },
+                        error: function (request, status, error) {
+                            
+                            alert(request.responseText);
+                        }
+
+                    });
+                     
+           
+            }
+  
+        function ShowModalEditCustomer(CustomerId, Phone, Province, City, Address) {
+
+       
+
+
+                $('#Edit_CustomerId').val(CustomerId);
+                $('#Edit_Phone').val(Phone);
+                $('#Edit_Province').val(Province);
+               
+                $('#Edit_Address').val(Address);
+
+                        iranwebsv(Province);
+                
+                $('#Edit_City').val(City);
+                
+                $('#EditCustomer').modal('show');
+       
+       }
+
+
+
+               function iranwebsv(state) {
+                        with (document.getElementById('Edit_City')) {
+                        options.length = 0;
+
+                        if (state == 0) {
+                            options[0] = new Option('لطفا استان را انتخاب نمایید', '0');
+                        }
+
+                        if (state == 1) {
+                            options[0] = new Option('لطفا شهر را انتخاب نمایید', '0');
+                            options[1] = new Option('تهران', '1');
+                            options[2] = new Option('ری', '2');
+                            options[3] = new Option('پاک دشت', '3');
+                        }
+                        if (state == 2) {
+                            options[0] = new Option('لطفا شهر را انتخاب نمایید', '0');
+                            options[1] = new Option('یزد', '4');
+                            options[2] = new Option('مهریز', '5');
+                            options[3] = new Option('ابر کوه', '6');
+                        }
+                        if (state == 3) {
+                            options[0] = new Option('لطفا شهر را انتخاب نمایید', '0');
+                            options[1] = new Option('شیراز', '7');
+                            options[2] = new Option('نی ریز', '8');
+                            options[3] = new Option('اباده', '9');
+
+                        }
+
+                    }
+                }
+
+
+       </script> 
+        }
+    
+
+
+        @section Modals
+        {
+            <!-- Modal Edit Customer -->
+            <div class="modal fade" id="EditCustomer" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLongTitle">ویرایش مشتری</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-xl-12 col-lg-12 col-md-12 mb-1">
+                                <fieldset class="form-group">
+                                    <input type="hidden" id="Edit_CustomerId" />
+                                    <label for="basicInput">شماره</label>
+                                    <input type="text" class="form-control" id="Edit_Phone">
+                                    <br/>
+                                   <div class="form-group row"> 
+                                <label for="Edit_Province" class="col-sm-2 col-form-label text-right">استان:</label>
+                                        <select name="state" onChange="iranwebsv(this.value);" id="Edit_Province">
+                                            <option value="0">لطفا استان را انتخاب نمایید</option>
+                                            <option value="1">تهران</option>
+                                            <option value="2">یزد</option>
+                                            <option value="3">فارس</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group row">
+                                <label for="Edit_City" class="col-sm-2 col-form-label text-right">شهر:</label>
+                                <select name="city" id="Edit_City">
+                                    <option value="0">لطفا شهر را انتخاب نمایید</option>
+                                </select>
+                                </div>
+                                    <label for="basicInput">آدرس</label>
+                                    <input type="text" class="form-control" id="Edit_Address">
+                                   
+                                </fieldset>
+                            </div>
+
+
+                        </div>
+                        <div class="modal-footer">
+                            <a  class="btn btn-secondary" data-dismiss="modal">بستن</a>
+                    <a class="btn btn-primary" onclick="EditCustomer()">اعمال تغییرات</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+
+
+
+
+
+
