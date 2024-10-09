@@ -81,7 +81,8 @@ namespace MainProject.Application.Services.Users.Queries.GetUsersForAdmin
                 IsActive = p.IsActive,
                 IsAdmin = p.IsAdmin,
                Password = p.Password,
-               Roles = p.UserInRoles.Select(ur => ur.Role.Name).ToList()
+               Roles = p.UserInRoles.Select(ur => ur.Role.Name).ToList(),
+               RoleIds = p.UserInRoles.Select(ur => ur.RoleId)
              
             }).ToList();
             if (usersList.Count == 0 || usersList == null)

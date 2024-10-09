@@ -1,5 +1,6 @@
 ﻿using MainProject.Application.Services.Users.Commands.Register;
 using System.Collections.Generic;
+using MainProject.Application.Services.Users.Commands.EditUser;
 
 namespace MainProject.Mvc.Areas.Admin.Models.ViewModels.User
 {
@@ -11,6 +12,7 @@ namespace MainProject.Mvc.Areas.Admin.Models.ViewModels.User
         public string Email { get; set; }
         public bool IsActive { get; set; }
         public bool IsAdmin { get; set; }
-        public List<RolesInRegisterUserDto> roles { get; set; }
+        public string RoleIds { get; set; }
+
     }
 }

@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.infra.data\\migrations\\20241009055946_remove_cue_and_rememberme_property_in_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|solutionrelative:mainproject.infra.data\\migrations\\20241009055946_remove_cue_and_rememberme_property_in_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.domain\\model\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|solutionrelative:mainproject.domain\\model\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\services\\users\\commands\\edituser\\edituserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\services\\users\\commands\\edituser\\edituserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\models\\viewmodels\\authenticationviewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\models\\viewmodels\\authenticationviewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.infra.data\\migrations\\20241009090413_createdb3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|solutionrelative:mainproject.infra.data\\migrations\\20241009090413_createdb3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.infra.data\\migrations\\20241009090323_remove_inherit_userinrole3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|solutionrelative:mainproject.infra.data\\migrations\\20241009090323_remove_inherit_userinrole3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.domain\\model\\users\\userinrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|solutionrelative:mainproject.domain\\model\\users\\userinrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\services\\users\\commands\\adduser\\adduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\services\\users\\commands\\adduser\\adduserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,79 +47,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
-              "RelativeDocumentMoniker": "MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
-              "RelativeToolTip": "MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:59:47.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\User.cs",
-              "RelativeDocumentMoniker": "MainProject.Domain\\Model\\Users\\User.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\User.cs",
-              "RelativeToolTip": "MainProject.Domain\\Model\\Users\\User.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:58:32.616Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
-              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "_AdminLayout.cshtml",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAWwIcAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T05:52:46.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
-              "RelativeToolTip": "MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
-              "ViewState": "AgIAAHQAAAAAAAAAAAAAAI4AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-09T05:52:20.827Z",
+              "WhenOpened": "2024-10-09T09:07:42.259Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
-              "RelativeToolTip": "MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
+              "Title": "20241009090413_CreateDb3.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009090413_CreateDb3.cs",
+              "RelativeDocumentMoniker": "MainProject.Infra.Data\\Migrations\\20241009090413_CreateDb3.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009090413_CreateDb3.cs",
+              "RelativeToolTip": "MainProject.Infra.Data\\Migrations\\20241009090413_CreateDb3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:51:54.275Z",
+              "WhenOpened": "2024-10-09T09:04:14.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "20241009090323_Remove_Inherit_UserInRole3.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009090323_Remove_Inherit_UserInRole3.cs",
+              "RelativeDocumentMoniker": "MainProject.Infra.Data\\Migrations\\20241009090323_Remove_Inherit_UserInRole3.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009090323_Remove_Inherit_UserInRole3.cs",
+              "RelativeToolTip": "MainProject.Infra.Data\\Migrations\\20241009090323_Remove_Inherit_UserInRole3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T09:03:23.677Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserInRole.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\UserInRole.cs",
+              "RelativeDocumentMoniker": "MainProject.Domain\\Model\\Users\\UserInRole.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\UserInRole.cs",
+              "RelativeToolTip": "MainProject.Domain\\Model\\Users\\UserInRole.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAowAkAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:44:59.436Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAIsAAAAAAAAAAAAAAJgAAAAQAAAAAAAAAA==",
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAswF8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-09T05:51:13.994Z",
+              "WhenOpened": "2024-10-09T08:43:17.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddUserService.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Users\\Commands\\AddUser\\AddUserService.cs",
+              "RelativeDocumentMoniker": "MainProject.Application\\Services\\Users\\Commands\\AddUser\\AddUserService.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Users\\Commands\\AddUser\\AddUserService.cs",
+              "RelativeToolTip": "MainProject.Application\\Services\\Users\\Commands\\AddUser\\AddUserService.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:29:36.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EditUserService.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Users\\Commands\\EditUser\\EditUserService.cs",
+              "RelativeDocumentMoniker": "MainProject.Application\\Services\\Users\\Commands\\EditUser\\EditUserService.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Services\\Users\\Commands\\EditUser\\EditUserService.cs",
+              "RelativeToolTip": "MainProject.Application\\Services\\Users\\Commands\\EditUser\\EditUserService.cs",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAWwHgAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T08:28:38.828Z",
               "EditorCaption": ""
             }
           ]

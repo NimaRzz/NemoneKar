@@ -34,6 +34,7 @@ namespace PishroProject.Mvc.Areas.Admin.Controllers
         public IActionResult Index(Ordering ordering, string SearchKey, int Page=1, int pageSize=20)
         {
             var users = _userFacad.GetUsersForAdminService.Execute(ordering, SearchKey, Page, pageSize);
+            ViewBag.Roles = new SelectList(_userFacad.GetRolesForAdminService.Execute().Data, "Id", "Name");
 
             return View(users);
         }
@@ -73,11 +74,17 @@ namespace PishroProject.Mvc.Areas.Admin.Controllers
             return Json(userAddResult);
         }
 
-
         [HttpPost]
         [Route("/admin/users/Edit")]
         public IActionResult Edit(EditUserViewModel request)
         {
+
+            var roleIds = new List<long>();
+            if (!string.IsNullOrWhiteSpace(request.RoleIds))
+            {
+                roleIds = JsonConvert.DeserializeObject<List<long>>(request.RoleIds);
+            }
+
            var userEditResult = _userFacad.EditUserService.Execute(new RequestEditUserDto()
             {
                 UserId = request.UserId,
@@ -86,6 +93,10 @@ namespace PishroProject.Mvc.Areas.Admin.Controllers
                 UserName = request.UserName,
                 IsActive = request.IsActive,
                 IsAdmin = request.IsAdmin,
+                roles = roleIds.Select(p => new RolesInRegisterUserDto()
+                {
+                    Id = p
+                }).ToList()
             });
 
             return Json(userEditResult);

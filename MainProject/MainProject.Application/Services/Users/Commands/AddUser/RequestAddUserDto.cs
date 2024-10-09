@@ -18,8 +18,7 @@ namespace MainProject.Application.Services.Users.Commands.AddUser
         public bool IsAdmin { get; set; }
       
         public bool IsActive { get; set; }
-      
-
+        
         public List<RolesInRegisterUserDto> roles { get; set; }
 
     }

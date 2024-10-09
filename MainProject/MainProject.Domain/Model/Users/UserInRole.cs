@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MainProject.Domain.Model.Users
 {
-    public class UserInRole:BaseModel
+    public class UserInRole
     {
         public long Id { get; set; }
 

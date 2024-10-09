@@ -1,4 +1,5 @@
 ﻿@addTagHelper *, LazZiya.TagHelpers
+@using Newtonsoft.Json
 @model MainProject.Application.Services.Users.Queries.GetUsersForAdmin.ResultGetUserDto
 @{
     ViewData["Title"] = "Index";
@@ -70,8 +71,11 @@
                                             }
                                             @Roles
                                         </td>
-                                        <td>
-                                            <button class="btn btn-primary" onclick="ShowModalEditUser('@item.UserId', '@item.UserName', '@item.Email', @(item.IsActive.ToString().ToLower()), @(item.IsAdmin.ToString().ToLower()))">ویرایش کاربر</button>
+                                        <td>                                            
+                                            @{
+                                                    var roleIds = item.RoleIds == null ? "[]" : JsonConvert.SerializeObject(item.RoleIds);
+                                            }
+                                            <button class="btn btn-primary" onclick="ShowModalEditUser('@item.UserId', '@item.UserName', '@item.Email', @(item.IsActive.ToString().ToLower()), @(item.IsAdmin.ToString().ToLower()), '@roleIds')">ویرایش کاربر</button>
                                             <button class="btn btn-danger" onclick="DeleteUser('@item.UserId')">حذف کاربر</button>
 
 
@@ -166,7 +170,12 @@
 
                     var data = new FormData();
 
+                   var roles = [];
+                   $("#RoleIds option:selected").each(function () {
+                       roles.push($(this).val());
+                   });
 
+                    data.append('RoleIds', JSON.stringify(roles));
                     data.append('UserId', $("#Edit_UserId").val());
                     data.append('Email', $("#Edit_Email").val());
                     data.append('Password', $("#Edit_Password").val());
@@ -214,7 +223,7 @@
                 }
 
 
-                function ShowModalEditUser(UserId, Username, Email, IsActive, IsAdmin) {
+                function ShowModalEditUser(UserId, Username, Email, IsActive, IsAdmin, roleIds) {
 
                     $('#Edit_UserId').val(UserId);
                     $('#Edit_Username').val(Username);
@@ -222,6 +231,8 @@
                     $('#Edit_IsActive').prop('checked', IsActive);
                     $('#Edit_IsAdmin').prop('checked', IsAdmin);
 
+                    var selectedRoles = JSON.parse(roleIds);
+                    $('#RoleIds').val(selectedRoles).trigger('change');
 
                     $('#EditUser').modal('show');
 
@@ -259,6 +270,16 @@
                                     <input type="checkbox" id="Edit_IsAdmin">
                                     <label for="basicInput">فعال</label>
                                     <input type="checkbox" id="Edit_IsActive">
+                                    @* <div class="form-group row"> *@
+                                        <label for="RoleIds" class="col-sm-2 col-form-label text-right">نقش ها:</label>
+                                        <select class="form-select" name="RoleIds" id="RoleIds" asp-items="@ViewBag.Roles" multiple>
+                                      @foreach (var role in ViewBag.Roles)
+                                      {
+                                          <option value="@role.Value">@role.Text</option>
+                                      }
+
+                                        </select>
+                                    @* </div> *@
                                 </fieldset>
                             </div>
 

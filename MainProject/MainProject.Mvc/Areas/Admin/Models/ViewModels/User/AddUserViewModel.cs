@@ -16,7 +16,6 @@ namespace MainProject.Mvc.Areas.Admin.Models.ViewModels.User
 
         public string RoleIds { get; set; }
 
-        public List<RolesInRegisterUserDto> roles { get; set; }
 
 
     }

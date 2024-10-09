@@ -10,6 +10,7 @@ using MainProject.Common;
 using MainProject.Common.Dto;
 using MainProject.Domain.Model.Users;
 using MD.PersianDateTime;
+using Microsoft.EntityFrameworkCore;
 
 namespace MainProject.Application.Services.Users.Commands.EditUser
 {
@@ -27,7 +28,7 @@ namespace MainProject.Application.Services.Users.Commands.EditUser
         {
 
           
-                var user = _context.Users.Find(request.UserId);
+                var user = _context.Users.Include(p => p.UserInRoles).FirstOrDefault(p => p.Id == request.UserId);
 
                 if (user == null)
                 {
@@ -90,13 +91,40 @@ if (request.Password.Length<8)
 
             }
 
-            user.IsActive = request.IsActive;
+
+
+
+                   _context.UserInRoles.RemoveRange(user.UserInRoles); 
+                   user.UserInRoles.Clear();
+
+                    List<UserInRole> userInRoles = new List<UserInRole>();
+
+                    foreach (var item in request.roles)
+                    {
+                        var roles = _context.Roles.Find(item.Id);
+                        if (roles != null)
+                        {
+                            userInRoles.Add(new UserInRole()
+                            {
+                                Role = roles,
+                                RoleId = roles.Id,
+                                User = user,
+                                UserId = user.Id
+                            });
+                        }
+                    }
+
+
+
+
+                    user.UserInRoles = userInRoles;
+                    user.IsActive = request.IsActive;
                     user.IsAdmin = request.IsAdmin;
                     user.Email = request.Email;
                     user.UserName = request.UserName;
-
                     user.UpdateTime = DateTime.Now;
 
+                _context.UserInRoles.AddRange(userInRoles);
                 _context.SaveChanges();
                 return new ResultDto()
                 {
