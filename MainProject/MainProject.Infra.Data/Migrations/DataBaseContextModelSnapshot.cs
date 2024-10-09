@@ -19,44 +19,6 @@ namespace MainProject.Infra.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("MainProject.Domain.Model.Cues.Cue", b =>
-                {
-                    b.Property<long>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("bigint")
-                        .UseIdentityColumn();
-
-                    b.Property<DateTime>("Date")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("InsertTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<bool>("IsRemoved")
-                        .HasColumnType("bit");
-
-                    b.Property<DateTime?>("RemoveTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("ShowDate")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime?>("UpdateTime")
-                        .HasColumnType("datetime2");
-
-                    b.Property<long>("UserId")
-                        .HasColumnType("bigint");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("UserId");
-
-                    b.ToTable("Cues");
-                });
-
             modelBuilder.Entity("MainProject.Domain.Model.Customers.City", b =>
                 {
                     b.Property<long>("Id")
@@ -219,9 +181,6 @@ namespace MainProject.Infra.Data.Migrations
                     b.Property<string>("Password")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Remember")
-                        .HasColumnType("bit");
-
                     b.Property<DateTime?>("RemoveTime")
                         .HasColumnType("datetime2");
 
@@ -272,17 +231,6 @@ namespace MainProject.Infra.Data.Migrations
                     b.HasIndex("UserId");
 
                     b.ToTable("UserInRoles");
-                });
-
-            modelBuilder.Entity("MainProject.Domain.Model.Cues.Cue", b =>
-                {
-                    b.HasOne("MainProject.Domain.Model.Users.User", "Customer")
-                        .WithMany("Cues")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Customer");
                 });
 
             modelBuilder.Entity("MainProject.Domain.Model.Customers.City", b =>
@@ -354,8 +302,6 @@ namespace MainProject.Infra.Data.Migrations
 
             modelBuilder.Entity("MainProject.Domain.Model.Users.User", b =>
                 {
-                    b.Navigation("Cues");
-
                     b.Navigation("Customer");
 
                     b.Navigation("UserInRoles");

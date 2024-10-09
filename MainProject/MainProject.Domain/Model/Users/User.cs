@@ -25,8 +25,6 @@ namespace MainProject.Domain.Model.Users
     
     public bool IsAdmin { get; set; }
     
-    public bool Remember { get; set; } = false;
-
   
 
         public virtual Customer Customer { get; set; }

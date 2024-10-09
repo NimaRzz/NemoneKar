@@ -3,48 +3,28 @@
   "WorkspaceRootPath": "G:\\NemoneKar\\NemoneKar\\MainProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.infra.data\\migrations\\20241009055946_remove_cue_and_rememberme_property_in_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|solutionrelative:mainproject.infra.data\\migrations\\20241009055946_remove_cue_and_rememberme_property_in_user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.domain\\model\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|solutionrelative:mainproject.domain\\model\\users\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\controllers\\authenticationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.domain\\model\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|solutionrelative:mainproject.domain\\model\\users\\role.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\models\\viewmodels\\authenticationviewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\models\\viewmodels\\authenticationviewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.domain\\model\\users\\userinrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0E27AB25-F9F9-43F8-9475-219761D7D39A}|MainProject.Domain\\MainProject.Domain.csproj|solutionrelative:mainproject.domain\\model\\users\\userinrole.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\views\\users\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\common\\roles\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\common\\roles\\userroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\views\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\areas\\admin\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.application\\interfaces\\contexts\\idatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B008530-57D0-402F-87F9-8A47C699B835}|MainProject.Application\\MainProject.Application.csproj|solutionrelative:mainproject.application\\interfaces\\contexts\\idatabasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.infra.data\\contexts\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7394430-AFE1-4BD5-BFE2-5CA3508B7B78}|MainProject.Infra.Data\\MainProject.Infra.Data.csproj|solutionrelative:mainproject.infra.data\\contexts\\databasecontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|g:\\nemonekar\\nemonekar\\mainproject\\mainproject.mvc\\views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6A181E37-614B-4FC2-B319-A0E57B4494BB}|MainProject.Mvc\\MainProject.Mvc.csproj|solutionrelative:mainproject.mvc\\views\\authentication\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 389,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,145 +42,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Role.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\Role.cs",
-              "RelativeDocumentMoniker": "MainProject.Domain\\Model\\Users\\Role.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\Role.cs",
-              "RelativeToolTip": "MainProject.Domain\\Model\\Users\\Role.cs",
+              "DocumentIndex": 0,
+              "Title": "20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
+              "RelativeDocumentMoniker": "MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
+              "RelativeToolTip": "MainProject.Infra.Data\\Migrations\\20241009055946_Remove_Cue_And_RememberMe_Property_In_User.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:40:55.389Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UserInRole.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\UserInRole.cs",
-              "RelativeDocumentMoniker": "MainProject.Domain\\Model\\Users\\UserInRole.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\UserInRole.cs",
-              "RelativeToolTip": "MainProject.Domain\\Model\\Users\\UserInRole.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:40:53.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserRoles.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Common\\Roles\\UserRoles.cs",
-              "RelativeDocumentMoniker": "MainProject.Application\\Common\\Roles\\UserRoles.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Common\\Roles\\UserRoles.cs",
-              "RelativeToolTip": "MainProject.Application\\Common\\Roles\\UserRoles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:37:54.474Z",
+              "WhenOpened": "2024-10-09T05:59:47.611Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Startup.cs",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Startup.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Startup.cs",
-              "RelativeToolTip": "MainProject.Mvc\\Startup.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAqwCsAAAAAAAAAAAAAAA==",
+              "Title": "User.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\User.cs",
+              "RelativeDocumentMoniker": "MainProject.Domain\\Model\\Users\\User.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Domain\\Model\\Users\\User.cs",
+              "RelativeToolTip": "MainProject.Domain\\Model\\Users\\User.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAABoAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:37:16.31Z",
+              "WhenOpened": "2024-10-09T05:58:32.616Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Views\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AgIAADIBAAAAAAAAAAAnwEUBAABYAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Views\\Users\\Index.cshtml",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-08T18:25:16.053Z",
+              "WhenOpened": "2024-10-09T05:52:46.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
+              "RelativeDocumentMoniker": "MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
+              "RelativeToolTip": "MainProject.Mvc\\Views\\Authentication\\Login.cshtml",
+              "ViewState": "AgIAAHQAAAAAAAAAAAAAAI4AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-10-09T05:52:20.827Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "AuthenticationController.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "RelativeToolTip": "MainProject.Mvc\\Controllers\\AuthenticationController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
+              "RelativeToolTip": "MainProject.Mvc\\Models\\ViewModels\\AuthenticationViewModel\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:24:53.7Z",
+              "WhenOpened": "2024-10-09T05:51:54.275Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Controllers\\HomeController.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MainProject.Mvc\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "AuthenticationController.cs",
+              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\AuthenticationController.cs",
+              "RelativeDocumentMoniker": "MainProject.Mvc\\Controllers\\AuthenticationController.cs",
+              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Controllers\\AuthenticationController.cs",
+              "RelativeToolTip": "MainProject.Mvc\\Controllers\\AuthenticationController.cs",
+              "ViewState": "AgIAAIsAAAAAAAAAAAAAAJgAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:24:48.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Controllers\\CustomersController.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABAAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:22:38.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "MainProject.Mvc\\Areas\\Admin\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:21:02.484Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "IDataBaseContext.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\Contexts\\IDataBaseContext.cs",
-              "RelativeDocumentMoniker": "MainProject.Application\\Interfaces\\Contexts\\IDataBaseContext.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Application\\Interfaces\\Contexts\\IDataBaseContext.cs",
-              "RelativeToolTip": "MainProject.Application\\Interfaces\\Contexts\\IDataBaseContext.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:17:47.058Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DataBaseContext.cs",
-              "DocumentMoniker": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Contexts\\DataBaseContext.cs",
-              "RelativeDocumentMoniker": "MainProject.Infra.Data\\Contexts\\DataBaseContext.cs",
-              "ToolTip": "G:\\NemoneKar\\NemoneKar\\MainProject\\MainProject.Infra.Data\\Contexts\\DataBaseContext.cs",
-              "RelativeToolTip": "MainProject.Infra.Data\\Contexts\\DataBaseContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-08T18:17:32.005Z",
+              "WhenOpened": "2024-10-09T05:51:13.994Z",
               "EditorCaption": ""
             }
           ]

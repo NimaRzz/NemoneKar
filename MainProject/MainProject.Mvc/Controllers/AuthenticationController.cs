@@ -152,7 +152,7 @@ namespace MainProject.Mvc.Controllers
                 var principal = new ClaimsPrincipal(identity);
                 var properties = new AuthenticationProperties()
                 {
-                IsPersistent = true,
+                IsPersistent = request.RememberMe,
                 ExpiresUtc = DateTime.Now.AddDays(7)
                 };
 

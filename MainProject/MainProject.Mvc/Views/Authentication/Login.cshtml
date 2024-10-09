@@ -67,8 +67,8 @@
                                 <div class="form-group row mt-4">
                                     <div class="col-sm-6">
                                         <div class="custom-control custom-switch switch-success">
-                                            <input type="checkbox" class="custom-control-input" id="customSwitchSuccess" checked="checked">
-                                            <label class="custom-control-label text-muted" for="customSwitchSuccess">Remember me</label>
+                                            <input type="checkbox" class="custom-control-input" id="rememberme" checked="checked">
+                                            <label class="custom-control-label text-muted" for="rememberme">Remember me</label>
                                         </div>
                                     </div><!--end col-->
                                     <div class="col-sm-6 text-right">
@@ -131,15 +131,16 @@
     <script>
     
     function LoginUser() {
+        
         var Email = $("#email").val();
         var Password = $("#userpassword").val();
-          
+            var RememberMe = $("#rememberme").is(":checked");
 
 
-        var postData = {
+            var postData = {
             'Email': Email,
-            'Password': Password,   
-         
+            'Password': Password,
+             'RememberMe': RememberMe
         };
 
         $.ajax({
