@@ -81,9 +81,28 @@ namespace MainProject.Infra.Data.Contexts
         
         private void SeedData(ModelBuilder modelBuilder)
         {
+            //Roles
             modelBuilder.Entity<Role>().HasData(new Role{Id = 1, Name = nameof(UserRoles.Customer)});
             modelBuilder.Entity<Role>().HasData(new Role{Id = 2, Name = nameof(UserRoles.Admin)});
             modelBuilder.Entity<Role>().HasData(new Role{Id = 3, Name = nameof(UserRoles.Operator)});
+
+            //Provinces
+            modelBuilder.Entity<Province>().HasData(new Province { Id = 1, Name = nameof(Application.Common.Province.Province.Tehran) });
+            modelBuilder.Entity<Province>().HasData(new Province { Id = 2, Name = nameof(Application.Common.Province.Province.Yazd) });
+            modelBuilder.Entity<Province>().HasData(new Province { Id = 3, Name = nameof(Application.Common.Province.Province.Fars) });
+
+            //Cities
+            modelBuilder.Entity<City>().HasData(new City { Id = 1, Name = nameof(Application.Common.City.City.Tehran), ProvinceId = 1});
+            modelBuilder.Entity<City>().HasData(new City { Id = 2, Name = nameof(Application.Common.City.City.Rey), ProvinceId = 1});
+            modelBuilder.Entity<City>().HasData(new City { Id = 3, Name = nameof(Application.Common.City.City.PakDasht), ProvinceId = 1});
+            
+            modelBuilder.Entity<City>().HasData(new City { Id = 4, Name = nameof(Application.Common.City.City.Yazd), ProvinceId = 2});
+            modelBuilder.Entity<City>().HasData(new City { Id = 5, Name = nameof(Application.Common.City.City.Mehriz), ProvinceId = 2});
+            modelBuilder.Entity<City>().HasData(new City { Id = 6, Name = nameof(Application.Common.City.City.AbarKoh), ProvinceId = 2});
+           
+            modelBuilder.Entity<City>().HasData(new City { Id = 7, Name = nameof(Application.Common.City.City.Shiraz), ProvinceId = 3});
+            modelBuilder.Entity<City>().HasData(new City { Id = 8, Name = nameof(Application.Common.City.City.NeyRiz), ProvinceId = 3});
+            modelBuilder.Entity<City>().HasData(new City { Id = 9, Name = nameof(Application.Common.City.City.Abade), ProvinceId = 3});
         }
     }
 }

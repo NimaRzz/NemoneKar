@@ -37,6 +37,62 @@ namespace MainProject.Infra.Data.Migrations
                     b.HasIndex("ProvinceId");
 
                     b.ToTable("Cities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            Name = "Tehran",
+                            ProvinceId = 1L
+                        },
+                        new
+                        {
+                            Id = 2L,
+                            Name = "Rey",
+                            ProvinceId = 1L
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            Name = "PakDasht",
+                            ProvinceId = 1L
+                        },
+                        new
+                        {
+                            Id = 4L,
+                            Name = "Yazd",
+                            ProvinceId = 2L
+                        },
+                        new
+                        {
+                            Id = 5L,
+                            Name = "Mehriz",
+                            ProvinceId = 2L
+                        },
+                        new
+                        {
+                            Id = 6L,
+                            Name = "AbarKoh",
+                            ProvinceId = 2L
+                        },
+                        new
+                        {
+                            Id = 7L,
+                            Name = "Shiraz",
+                            ProvinceId = 3L
+                        },
+                        new
+                        {
+                            Id = 8L,
+                            Name = "NeyRiz",
+                            ProvinceId = 3L
+                        },
+                        new
+                        {
+                            Id = 9L,
+                            Name = "Abade",
+                            ProvinceId = 3L
+                        });
                 });
 
             modelBuilder.Entity("MainProject.Domain.Model.Customers.Customer", b =>
@@ -98,6 +154,23 @@ namespace MainProject.Infra.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Provinces");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1L,
+                            Name = "Tehran"
+                        },
+                        new
+                        {
+                            Id = 2L,
+                            Name = "Yazd"
+                        },
+                        new
+                        {
+                            Id = 3L,
+                            Name = "Fars"
+                        });
                 });
 
             modelBuilder.Entity("MainProject.Domain.Model.Users.Role", b =>
